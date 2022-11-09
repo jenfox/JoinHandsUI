@@ -8,7 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +18,10 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     FooterComponent,
     HomeComponent,
+    CardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

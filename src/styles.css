@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+.bold-text {
+  font-weight: bold;
+}
+
+.light-text {
+  color: rgb(0, 0, 0, 0.5);
+}

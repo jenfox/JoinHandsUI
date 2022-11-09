@@ -1,0 +1,38 @@
+<div id="card" class="container">
+  <div id="title-row" class="row">
+    <div class="col-8">
+      <h4 id="title">{{ foundationName }}</h4>
+    </div>
+    <div class="col-4 bold-text">⭐️ {{ rating }}</div>
+  </div>
+  <div id="info-row text-center" class="row">
+    <div class="col-3">
+      <div class="container">
+        <div class="row bold-text">Location</div>
+        <div class="row light-text smaller-font">{{ location }}</div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="container">
+        <div class="row bold-text">Eligibility</div>
+        <div class="row light-text smaller-font">
+          {{ eligible ? "y" : "n" }}
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="container">
+        <div class="row bold-text">Support Type</div>
+        <div class="row light-text smaller-font">
+          {{ supportTypes.join(", ") }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="desc-row" class="row">
+    <div class="col bold-text">Description</div>
+  </div>
+  <div class="row smaller-font">
+    <div class="col">{{ description }}</div>
+  </div>
+</div>
